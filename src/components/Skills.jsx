@@ -2,16 +2,16 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="w-full bg-white py-16 px-4 md:px-10 flex flex-col items-center"
+      className="w-full bg-gradient-to-br from-black via-gray-900 to-gray-800 py-20 px-4 md:px-10 flex flex-col items-center"
     >
-      <h2 className="text-4xl md:text-5xl font-bold text-orange-500 mb-12 text-center">
+      <h2 className="text-4xl md:text-5xl font-bold text-cyan-400 mb-16 text-center">
         Skills
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-5xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 w-full max-w-6xl">
         {/* Programming Languages */}
         <div className="text-center flex flex-col items-center">
-          <h3 className="text-2xl font-semibold text-gray-700 mb-6">
+          <h3 className="text-2xl font-semibold text-white mb-8">
             Programming Languages
           </h3>
           <div className="flex flex-wrap gap-6 justify-center">
@@ -31,16 +31,14 @@ const Skills = () => {
             ].map((skill, index) => (
               <div
                 key={index}
-                className="flex items-center space-x-4 bg-orange-100 rounded-lg p-4 hover:scale-105 transition-transform"
+                className="flex items-center space-x-4 bg-gradient-to-tr from-gray-900 to-black border border-cyan-400 shadow-cyan text-white rounded-xl p-4 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
               >
                 <img
                   src={skill.img}
                   alt={skill.name}
-                  className="w-10 h-10 object-contain"
+                  className="w-10 h-10 object-contain transition duration-500 hover:scale-125 hover:rotate-6 hover:brightness-125"
                 />
-                <span className="text-lg font-medium text-gray-800">
-                  {skill.name}
-                </span>
+                <span className="text-lg font-semibold">{skill.name}</span>
               </div>
             ))}
           </div>
@@ -48,7 +46,7 @@ const Skills = () => {
 
         {/* Web Development */}
         <div className="text-center flex flex-col items-center">
-          <h3 className="text-2xl font-semibold text-gray-700 mb-6">
+          <h3 className="text-2xl font-semibold text-white mb-8">
             Web Development
           </h3>
           <div className="flex flex-wrap gap-6 justify-center">
@@ -72,24 +70,22 @@ const Skills = () => {
             ].map((skill, index) => (
               <div
                 key={index}
-                className="flex items-center space-x-4 bg-orange-100 rounded-lg p-4 hover:scale-105 transition-transform"
+                className="flex items-center space-x-4 bg-gradient-to-tr from-gray-900 to-black border border-cyan-400 shadow-cyan text-white rounded-xl p-4 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
               >
                 <img
                   src={skill.img}
                   alt={skill.name}
-                  className="w-10 h-10 object-contain"
+                  className="w-10 h-10 object-contain transition duration-500 hover:scale-125 hover:rotate-6 hover:brightness-125"
                 />
-                <span className="text-lg font-medium text-gray-800">
-                  {skill.name}
-                </span>
+                <span className="text-lg font-semibold">{skill.name}</span>
               </div>
             ))}
           </div>
         </div>
 
         {/* Tools & Frameworks */}
-        <div className="md:col-span-2 text-center flex flex-col items-center">
-          <h3 className="text-2xl font-semibold text-gray-700 mb-6">
+        <div className="md:col-span-2 text-center flex flex-col items-center mt-4">
+          <h3 className="text-2xl font-semibold text-white mb-8">
             Tools & Frameworks
           </h3>
           <div className="flex flex-wrap gap-6 justify-center">
@@ -114,19 +110,17 @@ const Skills = () => {
                 img: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
                 name: "Bootstrap",
               },
-            ].map((tool, index) => (
+            ].map((skill, index) => (
               <div
                 key={index}
-                className="flex items-center space-x-4 bg-orange-100 rounded-lg p-4 hover:scale-105 transition-transform"
+                className="flex items-center space-x-4 bg-gradient-to-tr from-gray-900 to-black border border-cyan-400 shadow-cyan text-white rounded-xl p-4 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
               >
                 <img
-                  src={tool.img}
-                  alt={tool.name}
-                  className="w-10 h-10 object-contain"
+                  src={skill.img}
+                  alt={skill.name}
+                  className="w-10 h-10 object-contain transition duration-500 hover:scale-125 hover:rotate-6 hover:brightness-125"
                 />
-                <span className="text-lg font-medium text-gray-800">
-                  {tool.name}
-                </span>
+                <span className="text-lg font-semibold">{skill.name}</span>
               </div>
             ))}
           </div>
